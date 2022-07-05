@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+.nav{
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+}
+ul{
+    display: flex;
+    
+    
+    border-radius: 20px;
+    
+    width: 90%;
+    margin: auto;
+    justify-content: space-evenly;
+    border: 2px solid greenyellow;
+   
+}
+.nav li{
+    list-style: none;
+    padding: 1.4rem;
+    color: white;
+    border-radius: 20px;
+
+}
+body{
+    background-color: rgba(0, 0, 0);
+}
+.nav li a{
+    text-decoration: none;
+    color: white;
+}
+.nav li:hover{
+   
+    border: 1px solid greenyellow
+
+}
+#mainbox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    color: honeydew;
+}
+#infowon{
+    margin:1.5rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.5);
+    margin-right: 10%;
+    position: relative;
+
+}
+.box{
+    border :2px solid rgb(152, 243, 15);
+    font-size: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: greenyellow;
+}
+.gameinfo input{
+    border-radius: 15px;
+    border: 2px solid rgb(150, 243, 12);
+    color: rgb(150, 243, 12) ;
+    background-color: rgba(0,0,0,0.5);
+    padding: 1rem;
+    font-size: 1.3vw;
+    margin: 1rem;
+
+
+}
+.gameinfo{
+    font-size: 2rem;;
+}
+.gameinfo input:hover{
+   background-color: rgb(204, 241, 148);
+   color: black;
+   border: 2px solid black;
+}
+.box:hover
+{
+    border: 2px solid rgb(235, 83, 83);
+    
+}
+.bt
+{
+    border-top: 0;
+}
+.bb
+{
+    border-bottom: 0;
+}
+.bl
+{
+    border-left: 0;
+}
+.br
+{
+    border-right: 0;
+}
+#gif img{
+    display: none;
+}
+@media screen and (max-width: 950px)
+{
+    #mainbox{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 34px;
+    }
+    .gameinfo{
+        margin-top: 34px;
+        font-size: 2rem;
+    }
+    
+    
+    .grid{ 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+        
+    }
+    #reset{
+        font-size: 5vw;
+    }
+    .tx{
+        font-size: 16vw;
+    }
+    .nav ul{
+        width:100%;
+    }
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: rgb(245, 94, 94);
+    transition: width 1s ease-in-out;
+}
+#disp{
+    color:rgb(150, 243, 12);
+    font-size: 3.5rem;
+    margin:10px;
+    border:2px solid rgb(150, 243, 12);
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+.infowon{
+    color:rgb(150, 243, 12);
+    font-size: 3.5rem;
+    margin:10px;
+    border:2px solid black;
+    padding: 1rem;
+    border-radius: 15px;
+}
+#about
+{
+    display: flex;
+    justify-content: space-evenly;
+    width:75%;
+    color:rgb(204, 196, 196);
+    font-size: 1.5rem;
+    margin:auto;
+    margin-top: 5%;
+
+    border:2px solid rgb(150, 243, 12);
+    padding: 0.5rem;
+    border-radius: 15px;
+    font-family: 'Nova Cut', cursive;
+    padding: 2rem;
+    text-align: justify;
+}
